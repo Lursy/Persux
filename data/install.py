@@ -1,5 +1,5 @@
 import os
-from Persux.data.cores_persux import *
+from data.cores_persux import *
 
 
 def install():
