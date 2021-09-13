@@ -1,5 +1,5 @@
-from Persux.data.ferramentas import figlet, sleep
-from Persux.data.cores_persux import *
+from data.ferramentas import figlet, sleep
+from data.cores_persux import *
 
 
 def cor():
