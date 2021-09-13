@@ -9,7 +9,7 @@ def install():
         os.system(f'python3 -m pip install --upgrade pip {null}')
         req = (('pip', 'lolcat'), ('pip', 'pyfiglet'), ('pkg', 'figlet -y'))
         for item in req:
-            os.system(f'{item[0]} {item[1]} {null}')
+            os.system(f'{item[0]}  install {item[1]} {null}')
         os.system('clear')
         user = str(input(f'{ve}Nome: {cy}'))
         os.system('rm -rf .Cor')
