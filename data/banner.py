@@ -1,5 +1,5 @@
-from Persux.data.ferramentas import *
-from Persux.data.menu import *
+from data.ferramentas import *
+from data.menu import *
 
 
 def banner():
