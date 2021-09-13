@@ -25,7 +25,7 @@ try:
             sleep(2)
             print('        Esse é o menu, fique a vontade :D')
             sleep(1.4)
-        print(persuxf)
+        print(persuxf.rstrip(), '2.0')
         user = (open('.usuario', 'r')).readline()
         print(f'''{ve}┏━━━━━━━━━━━━━━━━━┓
   {am}[ 1 ] {br}-{cy} letra
