@@ -7,7 +7,7 @@ def install():
     if not inst:
         null = '&>/dev/null'
         os.system(f'python3 -m pip install --upgrade pip {null}')
-        req = (('pip', 'lolcat'), ('pip', 'pyfiglet -y'), ('pkg', 'figlet'))
+        req = (('pip', 'lolcat'), ('pip', 'pyfiglet'), ('pkg', 'figlet -y'))
         for item in req:
             os.system(f'{item[0]} {item[1]} {null}')
         os.system('clear')
