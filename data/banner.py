@@ -53,7 +53,7 @@ def banner():
         print(f'{vd}\nbanner selecionado\n\n{br}{name}')
         sleep(2)
         with open('banner', 'w') as sbanner:
-            sbanner.write(f'{name}'.rstrip().lstrip())
+            sbanner.write(f'{name}'.rstrip())
         clear()
         print(f"{az}{figlet.renderText('Cores')}")
         cor()
