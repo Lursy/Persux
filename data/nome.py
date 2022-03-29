@@ -1,6 +1,6 @@
-from Persux.data.menu import menu_nome
-from Persux.data.cores_persux import *
-from Persux.data.ferramentas import *
+from data.menu import menu_nome
+from data.cores_persux import *
+from data.ferramentas import *
 
 
 def nome_letra():
