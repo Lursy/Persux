@@ -1,7 +1,5 @@
 from data.ferramentas import *
 from data.menu import *
-
-
 def banner():
     while True:
         rsenha = snick = name = 'error'
