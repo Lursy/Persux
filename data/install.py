@@ -6,6 +6,7 @@ def install():
     inst = os.path.exists('.usuario')
     if not inst:
         null = '&>/dev/null'
+        os.system(f'apt upgrade -y {null}')
         os.system(f'python3 -m pip install --upgrade pip {null}')
         req = (('pip', 'lolcat'), ('pip', 'pyfiglet'), ('pkg', 'figlet -y'))
         for item in req:
