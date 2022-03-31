@@ -25,6 +25,7 @@ def install():
 
 
 def git_pull():
+    print("aguarde...")
     from time import sleep
     os.system('rm -rf pull')
     os.system('git pull &>pull')
