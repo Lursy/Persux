@@ -1,14 +1,14 @@
 from data.install import *
 
+def ini():
+ git_pull()
+ os.chdir('/data/data/com.termux/files/usr/etc/')
+ usr = os.path.exists('.usuario')
+ install()
 
-git_pull()
-os.chdir('/data/data/com.termux/files/usr/etc/')
-usr = os.path.exists('.usuario')
-install()
 
-
-try:
-    while True:
+ try:
+   while True:
         from time import sleep
         from data.menu import *
         from data.ferramentas import clear
@@ -65,7 +65,10 @@ try:
         else:
             print(f'{ve}Comando não reconhecido')
             sleep(1)
-except KeyboardInterrupt:
+ except KeyboardInterrupt:
     print(f'\n{vd}Saindo...')
     sleep(1)
     clear()
+
+
+print("O programa está apresentando falhas, esperando atualizações do desenvolvedor.\nPara mais informações\nInstagram: @matheusf767\nWhatsapp: +553599477343")
