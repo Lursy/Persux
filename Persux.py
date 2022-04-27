@@ -1,10 +1,10 @@
 from data.install import *
 
-def ini():
- git_pull()
- os.chdir('/data/data/com.termux/files/usr/etc/')
- usr = os.path.exists('.usuario')
- install()
+
+git_pull()
+os.chdir('/data/data/com.termux/files/usr/etc/')
+usr = os.path.exists('.usuario')
+install()
 
 
  try:
