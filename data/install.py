@@ -25,7 +25,8 @@ def install():
 
 
 def git_pull():
-    print("aguarde...")
+    print("\033[H\033[2J\033[3J")
+    print("Checando Atualizações")
     from time import sleep
     os.system('rm -rf pull')
     os.system('git pull &>pull')
