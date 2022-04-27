@@ -5,6 +5,8 @@ from data.cores_persux import *
 def install():
     inst = os.path.exists('.usuario')
     if not inst:
+        print("\033[H\033[2J\033[3J")
+        print("installing requirements...")
         null = '&>/dev/null'
         os.system(f'apt upgrade -y {null}')
         os.system(f'python3 -m pip install --upgrade pip {null}')
@@ -21,7 +23,7 @@ def install():
         user_file = open('.usuario', 'w')
         user_file.write(user)
         user_file.close()
-    os.system('clear')
+    print("\033[H\033[2J\033[3J")
 
 
 def git_pull():
