@@ -36,4 +36,4 @@ fi
 
 
 def clear():
-    os.system('clear')
+    print("\033[H\033[2J\033[3J")
