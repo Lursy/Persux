@@ -4,7 +4,7 @@ from data.menu import coresf, cor
 
 
 def letra():
-    os.system('clear')
+    clear()
     scor = user = rnick = rsenha = open('.usuario', 'r').readline()
     cor_letra = f"PS1='\[\e[0;31m\]┏(\[\e[0;34m\]{user}\[\e[0;31m\])" \
                 f" [\[\e[0;32m\]\w\[\e[0;31m\]] \\n\[\e[0;31m\]┗► \[\e[1;:corm\]'"
