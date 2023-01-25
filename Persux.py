@@ -35,6 +35,8 @@ try:
   {am}[ 5 ] {br}-{cy} Criador
   {am}[ 6 ] {br}-{cy} Sair
 {ve}┗━━━━━━━━━━━━━━━━━┛
+Me ajude a fazer novos scripts apoiando no PIX
+PIX: 5c194b33-b6bf-4bab-91e4-26756c013560
 ''')
         menu = str(input(f'{am}//: {br}'))
         if not usr:
