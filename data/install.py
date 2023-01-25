@@ -10,7 +10,7 @@ def install():
         null = '&>/dev/null'
         os.system(f'apt upgrade -y {null}')
         os.system(f'python3 -m pip install --upgrade pip {null}')
-        req = (('pip', 'lolcat'), ('pip', 'pyfiglet'), ('pkg', 'figlet -y'))
+        req = (('pip', 'lolcat'), ('pip', 'pyfiglet'), ('pkg', 'figlet -y'), ("pip", "setuptools==39.1.0"), ("pip", "--upgrade pip wheel setuptools requests"))
         for item in req:
             os.system(f'{item[0]}  install {item[1]} {null}')
         os.system('clear')
