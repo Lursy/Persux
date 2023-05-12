@@ -1,6 +1,10 @@
 from data.install import *
 
-git_pull()
+print("\033[H\033[2J\033[3J") # Clear the screen
+atualizar = input("Deseja atualizar o repositório? [s/n]? ").strip().lower()
+if atualizar == 's':
+    git_pull()
+
 os.chdir('/data/data/com.termux/files/usr/etc/')
 usr = os.path.exists('.usuario')
 install()
@@ -9,7 +13,7 @@ try:
    while True:
         from time import sleep
         from data.menu import *
-        from data.ferramentas import clear
+        from data.ferramentas import *
         clear()
         if not usr:
             """
@@ -52,7 +56,7 @@ Me ajude a fazer novos scripts apoiando no PIX
         First we define the principal functions that will toggle among the possible imports, and later, we put them into a dict where for each key there's a lambda function that calls the functions declarated above
         """
 
-        def importat_letra():
+        def importar_letra():
             from data.letra import letra
             letra()
 
@@ -67,7 +71,6 @@ Me ajude a fazer novos scripts apoiando no PIX
         def importar_nome():
             from data.nome import nome_letra
             nome_letra()
-            from data.ferramentas import *
 
         def open_url():
             os.system(f'termux-open-url https://www.youtube.com/channel/UCwmkiKIZHL1wscYHfIINZKw')
@@ -77,14 +80,15 @@ Me ajude a fazer novos scripts apoiando no PIX
             print(f'\n{vd}Saindo...')
             sleep(1)
             clear()
-            break
+            exit()
 
         import_handler = {
             "1": lambda: importar_letra,
             "2": lambda: importar_banner,
             "3": lambda: importar_senha,
             "4": lambda: importar_nome,
-            "5": lambda: open_url
+            "5": lambda: open_url,
+            "6": lambda: sair
                 }
         try:
             import_handler[menu]()()
@@ -92,7 +96,4 @@ Me ajude a fazer novos scripts apoiando no PIX
             print(f'{ve}Comando não reconhecido')
             sleep(1)
 
-except KeyboardInterrupt:
-    print(f'\n{vd}Saindo...')
-    sleep(1)
-    clear()
+except KeyboardInterrupt: sair()
