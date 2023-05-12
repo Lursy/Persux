@@ -39,3 +39,8 @@
 
 > *12/09/21*
 > - Auto atualização ao executar script
+
+
+> *12/05/23*
+> Refatoração, opção de atualização e arquivo de gitignore
+> by: *gabrielfelipeassuncaodesouza
