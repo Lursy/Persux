@@ -83,15 +83,15 @@ Me ajude a fazer novos scripts apoiando no PIX
             exit()
 
         import_handler = {
-            "1": lambda: importar_letra,
-            "2": lambda: importar_banner,
-            "3": lambda: importar_senha,
-            "4": lambda: importar_nome,
-            "5": lambda: open_url,
-            "6": lambda: sair
+            "1": importar_letra,
+            "2": importar_banner,
+            "3": importar_senha,
+            "4": importar_nome,
+            "5": open_url,
+            "6": sair
                 }
         try:
-            import_handler[menu]()()
+            import_handler[menu]()
         except KeyError:
             print(f'{ve}Comando não reconhecido')
             sleep(1)
