@@ -10,10 +10,12 @@
 #
 
 #### *COMANDOS*  
- - `pkg i python -y && pkg i git -y`
- - `git clone https://github.com/Lursy/Persux`
- - `cd Persux`
- - `python Persux.py`  
+```
+pkg i python -y && pkg i git -y
+git clone https://github.com/Lursy/Persux
+cd Persux`
+python Persux.py
+``` 
 
 #### *FUNÇÕES*  
  - *Alterar cor da letra*
@@ -27,11 +29,11 @@
 > - atualização instantânea de nome  
 
 > *03/09/21*  
-> > **Styles para banner**
-> > - poison
-> > - lean
-> > - block
-> > - alligator  
+> - **Styles para banner**
+>   - poison  
+>   - lean  
+>   - block  
+>   - alligator  
 
 > *07/09/21*
 > - resolução de bugs
